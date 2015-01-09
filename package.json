@@ -1,0 +1,14 @@
+{
+  "name": "LagBusStopsAngular",
+  "version": "1.0.0",
+  "description": "Suitable valentine Gift and Prices",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "search"
+  ],
+  "author": "Adewunmi Adesokan and Ladi Adenusi",
+  "license": "ISC"
+}
