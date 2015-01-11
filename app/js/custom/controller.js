@@ -2,8 +2,6 @@
   var valentine = angular.module('valentine', []);
   valentineGiftsController = valentine.controller('valentineGiftsController', function ($scope, $http) {
 
-
-    $scope.hideEditForm = true;
     var tableUpdate = function () {
         $http.get('https://valentine-gift.herokuapp.com/users/gifts').success(function (data) {
         $scope.gifts = data;
@@ -13,7 +11,10 @@
         console.log('Error occured');
       });
     }
+
     tableUpdate();
+
+    $scope.hideEditForm = true;
 
     $scope.edit = function (id, newName, newDescription, newPrice) {
       $scope.newName = newName;
@@ -60,6 +61,11 @@
         console.log('Error occured');
       });
     };
+
+    $scope.cancel = function() {
+      $scope.hideEditForm = true;
+      tableUpdate();
+    }
 
   });
 

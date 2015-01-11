@@ -1,0 +1,224 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  min-width: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+input {
+  font-size: 1em;
+  color: #F05757;
+}
+
+header {
+  width: 100%;
+  height: 40px;
+  background-color: #FF4B4B;
+  margin-bottom: 10px;
+}
+
+header div {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 90%;
+  padding: 0 5%;
+  height: auto;
+}
+.addForm {
+  margin: 5% 0;
+  width: 100%;
+}
+
+legend {
+  width: 100%;
+  text-align: center;
+}
+.add-form-group {
+  width: 100%;
+}
+.form-control {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0 2%;
+  border-radius: 3px;
+  border: 1px solid #999;
+  height: 40px;
+  box-shadow: inset 0 2px 2px 0 #999;
+}
+
+.edit-form-control {
+  width: 95%;
+  margin: 5px auto;
+  padding: 0 2%;
+  border-radius: 3px;
+  border: 1px solid #999;
+  height: 40px;
+  box-shadow: inset 0 2px 2px 0 #999;
+}
+
+.btn {
+  margin: 5px 0;
+  width: 49%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  box-shadow: 0 2px 2px 0 #000;
+  font-size: 1em;
+}
+
+.edit-btn {
+  margin: 5px 0;
+  width: 48%;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  box-shadow: 0 2px 2px 0 #000;
+  font-size: 1em;
+}
+
+.safe {
+  background-color: #00A500;
+  color: #FFF;
+}
+
+.safe:hover {
+  background-color: #FF3434;
+  color: #FFF;
+}
+
+.unsafe:hover {
+  background-color: #999;
+  color: #FFF;
+}
+
+.editForm {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.edit-form-group {
+  top: 50%;
+  left: 50%;
+  width: 80vw;
+  height: 30vh;
+  margin-top: -15vh; /*set to a negative number 1/2 of your height*/
+  margin-left: -40vw; /*set to a negative number 1/2 of your width*/
+  position:fixed;
+  background-color: #F05757;
+  padding: 10px;
+}
+
+
+/*.edit-form-group*/
+.table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+caption {
+  width: 100%;
+  /*text-align: center;*/
+  height: 30px;
+}
+
+tr {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #999;
+  color: #F05757;
+}
+
+tr a {
+  color: #F05757;
+}
+
+tr a:hover {
+  text-decoration: none;
+}
+
+tr:nth-child(1) {
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  background-color: #FF3434;
+  color: #FFF;
+  font-weight: bold;
+}
+
+tr:nth-child(2n+3) {
+  background-color: #F05757;
+  color: #FFF;
+}
+
+tr:nth-child(2n+3) a {
+  color: #FFF;
+}
+
+th {
+  padding: 0 5px;
+}
+
+th:nth-child(1) {
+  width: 35%;
+}
+
+th:nth-child(2) {
+  width: 45%;
+}
+
+th:nth-child(3) {
+  width: 20%;
+}
+
+td {
+  padding: 5px;
+  vertical-align: middle;
+  border: 1px solid #FF4B4B;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 540px) {
+  .addForm {
+    width: 45%;
+    margin: 20px auto;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .edit-form-group {
+    width: 30vw;
+    height: 40vh;
+    margin-left: -15vw;
+    margin-top: -20vh;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

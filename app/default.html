@@ -1,0 +1,51 @@
+<!DOCTYPE>
+<html ng-app="valentine">
+  <head>
+    <link type= "text/css" rel="stylesheet" href= "css/vendor/bootstrap.css"/>
+    <link type= "text/css" rel="stylesheet" href= "css/custom/main.css"/>
+    <title>Valentine Gifts</title>
+  </head>
+
+  <body ng-controller="valentineGiftsController">
+    
+    <form class="navbar-form navbar-left" role="search" ng-submit="addGift()">
+      <div class="form-group">  
+        <input class="form-control" type="text" placeholder="Item name" ng-model="name">
+        <input class="form-control" type="text" placeholder="Description" ng-model="description">
+        <input class="form-control" type="text" placeholder="Price" ng-model="price">
+      </div>
+
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>  
+
+    <div class="editForm" ng-hide="hideEditForm">
+      <form class="navbar-form navbar-left" role="search" ng-submit="editGift()">
+        <div class="form-group">  
+          <input class="form-control" type="text" placeholder="Item name" ng-model="newName">
+          <input class="form-control" type="text" placeholder="Description" ng-model="newDescription">
+          <input class="form-control" type="text" placeholder="Price" ng-model="newPrice">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>  
+    </div> 
+
+    <table class="table">
+      <caption>Valentine Gifts</caption>
+      <tr>
+        <th>Item</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr ng-repeat="gift in gifts">
+        <td><a href="#" ng-click="edit(gift._id, gift.name, gift.description, gift.price)">{{gift.name}}</a></td>
+        <td>{{gift.description}}</td>
+        <td>{{gift.price | currency}}</td>
+      </tr>
+    </table>
+    <script src="js/vendor/angular.js"></script>
+    <script src="js/vendor/angular-mocks.js"></script>
+    <script src="js/vendor/jquery-2.1.1.js"></script>
+    <script src="js/custom/controller.js"></script>
+  </body>
+</html> 
